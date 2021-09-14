@@ -3,11 +3,11 @@ import React from "react";
 export default function Phonetic(props) {
   return (
     <div className="Phonetic">
-      <a href={props.phonetic.audio} target="-blabk">
-        Listen
-      </a>
+      <span className="text-phonetic">{props.phonetic.text}</span>
       <br />
-      {props.phonetic.text}
+      <audio controls className="audio-controls">
+        <source src={props.phonetic.audio} type="audio/mpeg" />
+      </audio>
     </div>
   );
 }
