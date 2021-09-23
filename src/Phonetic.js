@@ -6,7 +6,7 @@ export default function Phonetic(props) {
     <div className="Phonetic">
       <span className="text">{props.phonetic.text}</span>
       <br />
-      <audio controls className="audio-controls">
+      <audio key={props.phonetic.audio} controls className="audio-controls">
         <source src={props.phonetic.audio} type="audio/mpeg" />
       </audio>
     </div>
