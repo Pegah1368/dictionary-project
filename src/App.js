@@ -10,7 +10,15 @@ function App() {
           <Dictionary defaultKeyword="sunset" />
         </main>
         <footer className="App-footer">
-          <small>Coded by Pegah Bozorgmanesh</small>
+          <small>
+            This project was coded by Pegah Bozorgmanesh and is{" "}
+            <a
+              href="https://github.com/Pegah1368/dictionary-project"
+              target="-blank"
+            >
+              open-source on GitHub
+            </a>
+          </small>
         </footer>
       </div>
     </div>
